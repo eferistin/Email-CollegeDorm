@@ -5,9 +5,173 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:300,400,600,700,800|Simonetta" rel="stylesheet">
         <link rel="icon" type="image/ico" href="logo/LogoMakr_4rDoed.png" />
-        <!-- <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=greek" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+        <style>
+        @media only screen and (min-width:960px){
+            .container{
+                width:960px;
+            }
+            .school-name tr td h1{
+                padding: 70px 20px 20px 25px !important;
+                text-align: center;
+            }
+            .departments tr{
+                padding:15px 0 !important;
+            }
+            .departments tr td{
+                padding: 20px 0 !important;
+                width: 20%;
+                text-align: center;
+            }
+            .departments tr td a{
+                font-size: 18px;
+            }
+            .campus-photos td{
+                text-align: center;
+            }/*CodingEvelynMiami*/
+            .campus-photos td .main-building{
+                background: url("image/pexels-photo-207692.jpg");
+                padding-bottom: 20px;
+            }
+            .campus-photos td .library{
+                width:62% !important;
+                padding: 10px 0 5px;
+            }
+            .standard-dorms .standard-available{
+                padding-left: 40px !important;
+            }
+            .standard-dorms .standard-offers{
+                padding-left: 40px !important;
+            }
+            .standard-pics tr td{
+                padding-left: 40px !important;
+            }
+            .standard-dorms .deluxe-available{
+                padding-left: 40px !important;
+            }
+            .standard-dorms .deluxe-offers{
+                padding-left: 40px !important;
+            }
+            .deluxe-pics{
+                padding-left: 40px !important;
+            }
+            .address tr td{
+                padding-left: 40px !important;
+            }
+        }
+        @media only screen and (max-width:960px){
+            .container{
+                width:600px;
+            }
+        }
+        @media only screen and (max-width:600px){
+            .container{
+                width:100%;
+            }
+            .school-name{
+                width:100%;
+            }
+            .school-name tr td h1{
+                padding-bottom: 0 !important;
+                font-size: 28px;
+                text-align: center;
+            }
+            .school-logo{
+                width:100%;
+            }
+            .school-logo tr td a img{
+                width:20% !important;
+                padding:0 !important;
+            }
+            .departments tr td{
+                padding: 20px 0 !important;
+                width: 20%;
+                text-align: center;
+            }
+            .campus-photos tr td{
+                width:100%;
+                display: block;
+                text-align: center;
+                margin:0px auto;
+                padding:0 !important;
+            } 
+            .campus-photos tr .main-building{
+                width:45% !important;
+                text-align: center !important;
+                padding: 20px 0 20px 0 !important;
+            }
+            .campus-photos tr .library{
+                width:45% !important;
+                text-align: center !important;
+                padding: 20px 0 30px 0 !important;
+            }
+            .Lead-Ads h2{
+                font-size: 24px !important;
+            }
+            .standard-pics tr td img{
+                padding:0 !important;
+            }
+            .standard-pics tr td{
+                width:100%;
+                display: block;
+                text-align: center !important;
+                margin:0px auto;
+                padding:0 !important;
+            }
+            .standard-pics tr .standard-pic1{
+                width:80% !important;
+                text-align: center !important;
+                padding: 20px 0 30px 0 !important;
+            }
+            .standard-pics tr .standard-pic2{
+                width:80% !important;
+                text-align: center !important;
+                padding: 20px 0 10px 0 !important;
+            }
+            .deluxe-pics tr td img{
+                padding:0 !important;
+            }
+            .deluxe-pics tr td{
+                width:100%;
+                display: block;
+                text-align: center !important;
+                margin:0px auto;
+                padding:0 !important;
+            }
+            .deluxe-pics tr .deluxe-pic1{
+                width:60% !important;
+                text-align: center !important;
+                padding: 20px 0 30px 0 !important;
+            }
+            .deluxe-pics tr .deluxe-pic2{
+                width:65% !important;
+                text-align: center !important;
+                padding: 20px 0 30px 0 !important;
+            }
+        }
+        @media only screen and (max-width:550px){
+            .departments tr td{
+                padding: 20px 0 5px !important;
+                width: 15%;
+                font-size: .85em;
+                text-align: center;
+            }
+            .Lead-Ads h3{
+                font-size: .95em;
+            }
+            .standard-available h3{
+                font-size: .95em;
+            }
+            .standard-available h4{
+                font-size: .95em;
+            }
+            .deluxe-available h3{
+                font-size: .95em;
+            }
+            .deluxe-available h4{
+                font-size: .95em;
+            }
+        }
+        </style>
     </head>
     <body>
         <!--start of html email-->
@@ -19,7 +183,7 @@
                         <!--School color #9a002f (Aurburny), #005f9a (blue) , #9a8300 (lime-brown)-->
                         <tr style="padding:0; background:#9A002F;">
                             <td>                                
-                                <table border="0" cellspacing="0" cellpading="0" width=50% align="left">
+                                <table class="school-name" border="0" cellspacing="0" cellpading="0" width=50% align="left">
                                     <tr>
                                         <td>
                                             <h1 style="text-transform: uppercase; font:20px; padding :20px 20px 20px 25px; font-family: 'Open Sans', sans-serif; font-weight:700;">
@@ -28,10 +192,10 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table border="0" cellspacing="0" cellpading="0" width=50% align="right">
+                                <table class="school-logo" border="0" cellspacing="0" cellpading="0" width=50% align="right">
                                     <tr align="center">
                                         <td>
-                                            <a href="#"><img src="logo/LogoMakr_4rDoed.png" style="width:50%; padding: 40px 0 0 0;" alt="University logo"></a>
+                                            <a href="#createdby"><img src="logo/LogoMakr_4rDoed.png" style="width:50%; padding: 40px 0 0 0;" alt="University logo"></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -46,7 +210,7 @@
                         <!-- Start of menu-->
                         <tr style="background:#005f9a;"> 
                             <td>
-                                <table border="0" cellpading="0" cellspacing="0" width="100%" align="center" >
+                                <table class="departments" border="0" cellpading="0" cellspacing="0" width="100%" align="center" >
                                     <td>
                                         <a href="#" style="text-decoration:none; font-family: 'Open Sans', sans-serif; font-weight:600; color:white; padding:0 0 0 10px">Admissions</h3>
                                     </td>
@@ -68,21 +232,21 @@
                         <!--College Campus-->
                         <tr style="background:#005f9a;">
                             <td> 
-                                <table border="0" cellspacing="0" cellpading="0" width="100%" >
-                                   
+                                <table class="campus-photos" border="0" cellspacing="0" cellpading="0" width="100%" >
+                                    <tr>
                                         <td width="50%">
-                                            <img src="image/custom-small-pexels-photo-207692.jpg" alt="East University campus" style="padding:0 0 0 15px;" >
+                                            <img class="main-building" src="image/custom-small-pexels-photo-207692.jpg" alt="East University campus" style="padding:0 0 0 15px;" >
                                         </td>
                                         <td width="50%"> 
-                                            <img src="image/library-la-trobe-study-students-159740.jpg" alt="East University campus"  style="width:95%; padding:-30px 0 0 0; margin-top:-8px;">
+                                            <img class="library" src="image/library-la-trobe-study-students-159740.jpg" alt="East University campus"  style="width:95%; padding:-30px 0 0 0; margin-top:-8px;">
                                         </td>
-                                    
+                                    </tr>
                                 </table>
                             </td>                            
                         </tr> <!--end of College campus pic-->
                         <!--New Construction-->
                         <tr>
-                            <td>
+                            <td class="Lead-Ads">
                                 <h2 style="font-family:'Fugaz One', cursive,Open Sans, sans-serif; font-weight:400; text-transform:capitalize; color:#9a8300; font-size: 30px;" align="center" >
                                     New Dormitory construction
                                 </h2>
@@ -99,9 +263,9 @@
                         </tr>
                         <tr><!--Dorm Accommodations -->
                             <td>
-                                <table cellspacing="0" cellpading="0" border="0"> <!--container for bulletin points-->
+                                <table class="standard-dorms" cellspacing="0" cellpading="0" border="0"> <!--container for bulletin points-->
                                     <tr>
-                                        <td style="padding-left:20px; " width="50%">
+                                        <td class="standard-available" style="padding-left:20px; " width="50%">
                                             <h3 style="font-family:Open Sans, sans-serif; font-weight:600; color:#2e9a00;">
                                                 250 Available suits, 400 available beds.
                                             </h3>
@@ -111,47 +275,47 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="50%" align= "center" style="padding-bottom:15px;">
+                                        <td class="blueprint" width="50%" align= "center" style="padding-bottom:15px;">
                                             <h3 style="font-family:Open Sans, sans-serif; color:#9a8300;">
                                                 See floor plans below
                                             </h3>
-                                            <img src="image/pexels-photo-271667 (1).jpeg" alt="Dormroom floor plans" style="margin-bottom: 20px;">
+                                            <a href="#"><img src="image/pexels-photo-271667 (1).jpeg" alt="Dormroom floor plans" style="margin-bottom: 20px;"></a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td  style="padding-bottom:10px; padding-left:20px;">
+                                        <td class="standard-offers" style="padding-bottom:10px; padding-left:20px;">
                                             <table cellpading="0" border="0" cellspacing="0"><!--Dorm amenities-->
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/swimming-silhouette.png" alt="icon of swimer" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/swimming-silhouette.png" alt="icon of swimer" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Olympic size pool.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/people-watching-a-movie.png" alt="icon movie theater" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/people-watching-a-movie.png" alt="icon movie theater" width="40%">
                                                         </a>
                                                     </td>
                                                     <td  width="90%">Private movie theater available for party reserverations.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                            <a href="#"> <img src="logo/pool-table.png" alt="icon game room" width="40%">
+                                                            <a href="#specific-icon"> <img src="logo/pool-table.png" alt="icon game room" width="40%">
                                                             </a>
                                                         </td>
                                                     <td width="90%">Game room.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/washing-machine.png" alt="icon laundry machine" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/washing-machine.png" alt="icon laundry machine" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Laundry facility.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/barber.png" alt="icon Salon and Barber" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/barber.png" alt="icon Salon and Barber" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Barber & Salon Spa.</td>
@@ -161,21 +325,21 @@
                                     </tr>
                                     <tr>
                                         <td style="padding-bottom:10px;">
-                                            <table cellpading="0" border="0" cellspacing="0" align="left" style="margin-top:20px;  margin-bottom:5px;" width="100%">
-                                                
-                                                    <td width="50%">
+                                            <table class="standard-pics" cellpading="0" border="0" cellspacing="0" align="left" style="margin-top:20px;  margin-bottom:5px;" width="100%">
+                                                <tr>
+                                                    <td class="standard-pic1" width="50%">
                                                         <img src="image/small-pexels-photo-273683.jpg" alt="Picture of North Hall Dorm" width="85%" style="padding-left:20px;">
                                                     </td>
                                                
-                                                    <td width="50%">
+                                                    <td class="standard-pic1"  width="50%">
                                                         <img src="image/pexels-photo-1571467.jpeg" alt="Picture of dorm livingroom dining area"  width="85%" style="padding-left:20px;">
                                                     </td>
-                                               
+                                                </tr>
                                             </table>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="padding-left:20px; padding-bottom:15px;"> 
+                                        <td class="deluxe-available" style="padding-left:20px; padding-bottom:15px;"> 
                                             <h3 style="font-family:Open Sans, sans-serif; font-weight:600; color:#2e9a00;">
                                                 20 Deluxe Platinum Suits.
                                             </h3>
@@ -184,39 +348,39 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td  style="padding-bottom:10px; padding-left:20px;">
+                                        <td class="deluxe-offers" style="padding-bottom:10px; padding-left:20px;">
                                             <table cellpading="0" border="0" cellspacing="0"><!--Dorm amenities-->
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/armchair.png" alt="icon of livingroom" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/armchair.png" alt="icon of livingroom" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Private suit includes larger bedroom, living area and separate study nook.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/storage.png" alt="icon of storage" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/storage.png" alt="icon of storage" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Basement storage closet.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/valet.png" alt="icon of valet" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/valet.png" alt="icon of valet" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Valet parking.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/tshirt.png" alt="icon of dry cleaner" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/tshirt.png" alt="icon of dry cleaner" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">Concierge dry cleaners, limit 15 lb per week.</td>
                                                 </tr>
                                                 <tr>
                                                     <td width="10%">
-                                                        <a href="#"> <img src="logo/hair.png" alt="icon of valet" width="40%">
+                                                        <a href="#specific-icon"> <img src="logo/hair.png" alt="icon of valet" width="40%">
                                                         </a>
                                                     </td>
                                                     <td width="90%">2 allotted salon visits per month included.</td>
@@ -226,13 +390,13 @@
                                     </tr>
                                     <tr>
                                         <td  style="padding-bottom:10px;">
-                                            <table cellpading="0" border="0" cellspacing="0" align="left" style="margin-top:20px;" width="100%">
+                                            <table class="deluxe-pics" cellpading="0" border="0" cellspacing="0" align="left" style="margin-top:20px;" width="100%">
                                                 
-                                                    <td width="50%">
+                                                    <td class="deluxe-pic1" width="50%">
                                                         <img src="image/pexels-photo-1034584.jpg" alt="Picture of Dorm bedroom" width="65%" style="padding:0 0 0 70px;">
                                                     </td>
                                                
-                                                    <td width="50%">
+                                                    <td class="deluxe-pic2" width="50%">
                                                         <img src="image/space-camera-desk-laptop.jpg" alt="Picture of study nook" width="60%" style="padding:0 0 0 40px;">
                                                     </td>
                                                
@@ -241,7 +405,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <table border="0" cellpading="0" cellspacing="0" align="center" >
+                                            <table class="open-appl" border="0" cellpading="0" cellspacing="0" align="center" >
                                                 <tr>
                                                     <td>
                                                         <h3 style="font-family:'Fugaz One', cursive,Open Sans, sans-serif; font-weight:400; text-transform:capitalize; color:#9a8300; text-align: center;margin-bottom:0px;">
@@ -250,7 +414,7 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table border="0" cellpading="0" cellspacing="0" align="center" margin-bottom="0">
+                                            <table class="coupons" border="0" cellpading="0" cellspacing="0" align="center" margin-bottom="0">
                                                 <tr  align="center">
                                                     <td>
                                                         <a href="#" alt="coupon for summer dorm discount" style="text-decoration:none;">
@@ -269,7 +433,7 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table border="0" cellspacing="0" cellpadding="0">
+                                            <table class="address" border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td style="padding-left:20px;">
                                                         <h5 style="font-family:Open Sans, sans-serif;"><span>EUF</span>, Housing Office,<br> 7501 N. Jog Road
@@ -288,10 +452,10 @@
                                 <table border="0" cellspacing="0" cellpading="0"  align="center">
                                     <tr>
                                         <td>
-                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;">Copyright property of Evelyn Feristin</p>
-                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;">Click to <a href="#" title="Freepik"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; ">unsubscribe</a></p>
-                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; font-weight:700;">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; font-weight:700;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px; text-decoration:none;font-weight:700;">CC 3.0 BY</a></p>
-                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;">Created my free logo at <span style="font-weight:700;">LogoMakr.com</span></p>
+                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px; text-align: center;">© 2019 East University of Florida. All rights reserved.</p>
+                                            <p style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-align: center;">Click to <a href="#" title="Freepik"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; ">unsubscribe</a></p>
+                                            <p id="specific-icon" style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-align: center;">Icons made using <a href="https://www.flaticon.com/authors/freepik" title="Freepik"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; font-weight:700;">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-decoration:none; font-weight:700;">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank"  style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px; text-decoration:none;font-weight:700;">CC 3.0 BY</a></p>
+                                            <p id="createdby" style="color:white; font-family: Open Sans, sans-serif;  font-size: 8px;text-align: center;">Created my free logo at <span style="font-weight:700;">LogoMakr.com</span></p>
                                         </td>
                                     </tr>
                                 </table>
